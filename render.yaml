@@ -6,4 +6,3 @@ services:
     plan: free
     branch: main
     buildCommand: npm install
-    startCommand: node server.js
