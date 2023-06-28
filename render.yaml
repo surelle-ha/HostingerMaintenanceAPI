@@ -1,7 +1,6 @@
 services:
   - type: web
     name: api.hmapi151
-    runtime: docker
     repo: https://github.com/surelle-ha/HostingerMaintenanceAPI.git
     plan: free
     branch: main
