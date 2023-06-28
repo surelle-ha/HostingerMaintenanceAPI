@@ -5,3 +5,6 @@ services:
     repo: https://github.com/surelle-ha/HostingerMaintenanceAPI.git
     plan: free
     branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    port: 8080
