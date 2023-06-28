@@ -7,4 +7,3 @@ services:
     branch: main
     buildCommand: npm install
     startCommand: node server.js
-    port: 8080
