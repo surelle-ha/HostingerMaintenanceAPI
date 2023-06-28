@@ -44,6 +44,10 @@ app.get('/maintenance', (req, res) => {
         const postedOnElement = div.find('.update small .ago');
         const postedOn = postedOnElement.next().text().trim().split('-')[0].trim();
 
+        // Extract the posted month
+        const postedMonthElement = postedOnElement.nextAll('var[data-var="date"]').prev('var[data-var="date"]');
+        const postedMonth = postedMonthElement.text().trim();
+
         // Extract the posted date
         const postedDateElement = postedOnElement.nextAll('var[data-var="date"]');
         const postedDate = postedDateElement.text().trim();
@@ -62,7 +66,7 @@ app.get('/maintenance', (req, res) => {
           'URL': incidentUrl,
           'Details': maintenanceDetails,
           'Date': maintenanceDate,
-          'Posted': `${postedOn} ${postedDate}, ${postedYear} - ${postedTime} UTC`
+          'Posted': `${postedOn} ${postedMonth} ${postedDate}, ${postedYear} - ${postedTime} UTC`
         };
 
         // Push the object to the data array
