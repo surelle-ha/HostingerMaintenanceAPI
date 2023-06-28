@@ -58,11 +58,11 @@ app.get('/maintenance', (req, res) => {
 
         // Create an object for the extracted information
         const info = {
-          'Incident Title': incidentTitle,
-          'Incident URL': incidentUrl,
-          'Maintenance Details': maintenanceDetails,
-          'Maintenance Date': maintenanceDate,
-          'Posted On': `${postedOn} ${postedDate}, ${postedYear} - ${postedTime} UTC`
+          'Title': incidentTitle,
+          'URL': incidentUrl,
+          'Details': maintenanceDetails,
+          'Date': maintenanceDate,
+          'Posted': `${postedOn} ${postedDate}, ${postedYear} - ${postedTime} UTC`
         };
 
         // Push the object to the data array
