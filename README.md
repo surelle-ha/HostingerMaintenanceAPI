@@ -1,5 +1,6 @@
 
-> UNDER DEVELOPMENT
+> Outdated. Maintainer merged this with SatellineAPI and was moved to a private organization!
+
 <div align="center">
 	<h1>Hostinger Maintenance API</h1>
 </div>
